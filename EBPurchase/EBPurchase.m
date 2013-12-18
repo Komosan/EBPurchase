@@ -200,13 +200,19 @@
 			case SKPaymentTransactionStateFailed:
 				// Purchase was either cancelled by user or an error occurred.
 				
+                //キャンセル以外のエラーコードの場合
 				if (transaction.error.code != SKErrorPaymentCancelled) {
                     
                     // A transaction error occurred, so notify user.
                     if ([delegate respondsToSelector:@selector(failedPurchase:error:message:)])
                         [delegate failedPurchase:self error:transaction.error.code message:transaction.error.localizedDescription];
-				}
-                
+                } else {
+                    // キャンセル時にはデリゲートで通知します
+                    if ([delegate respondsToSelector:@selector(cancelPurchase:error:message:)])
+                        [delegate cancelPurchase:self error:transaction.error.code message:transaction.error.localizedDescription];
+                    
+                }
+        
 				// Finished transactions should be removed from the payment queue.
 				[[SKPaymentQueue defaultQueue] finishTransaction: transaction];
 				break;
@@ -221,6 +227,12 @@
     
     // Release the transaction observer since transaction is finished/removed.
     [[SKPaymentQueue defaultQueue] removeTransactionObserver:self];
+    
+    //暫定
+    if ([delegate respondsToSelector:@selector(ebPurchaseFinishedTransaction)]) {
+        [delegate ebPurchaseFinishedTransaction];
+    }
+    
 }
 
 // Called when SKPaymentQueue has finished sending restored transactions.

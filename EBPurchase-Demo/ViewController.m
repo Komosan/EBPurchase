@@ -11,7 +11,7 @@
 
 // REPLACE THIS VALUE WITH YOUR OWN IN-APP PURCHASE PRODUCT ID.
 
-#define SUB_PRODUCT_ID @"Your.IAP.Product.ID"
+#define SUB_PRODUCT_ID @"com.eilsysytem.Sample_InAppPurchase.sample2"
 
 // ALSO ADD THE RELATED PARENT APP BUNDLE IDENTIFIER TO THE INFO PLIST.
 
@@ -151,6 +151,10 @@
     }
 }
 
+-(void) cancelPurchase:(EBPurchase*)ebp error:(NSInteger)errorCode message:(NSString*)errorMessage{
+    NSLog(@"アプリ内課金処理がキャンセルされました。");
+}
+
 -(void) failedPurchase:(EBPurchase*)ebp error:(NSInteger)errorCode message:(NSString*)errorMessage 
 {
     NSLog(@"ViewController failedPurchase");
@@ -187,7 +191,9 @@
     [failedAlert release];
 }
 
-
+-(void )ebPurchaseFinishedTransaction{
+    NSLog(@"トランザクションが終了しました。");
+}
 
 - (void)viewDidUnload
 {

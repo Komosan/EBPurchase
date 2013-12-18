@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>15335903-348C-4A48-BFF5-85D24BACDADD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>EBPurchase-Demo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DC93BFB2-F8ED-4628-82E3-C0B1753FEB19</key>
+		<string>https://github.com/Komosan/EBPurchase.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>EBPurchase-Demo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DC93BFB2-F8ED-4628-82E3-C0B1753FEB19</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Komosan/EBPurchase.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DC93BFB2-F8ED-4628-82E3-C0B1753FEB19</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DC93BFB2-F8ED-4628-82E3-C0B1753FEB19</string>
+			<key>IDESourceControlWCCName</key>
+			<string>EBPurchase</string>
+		</dict>
+	</array>
+</dict>
+</plist>

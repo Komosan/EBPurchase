@@ -18,6 +18,7 @@
 		1B8DBDAC155DE31200042D26 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B8DBDAA155DE31200042D26 /* ViewController_iPhone.xib */; };
 		1B8DBDAF155DE31200042D26 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B8DBDAD155DE31200042D26 /* ViewController_iPad.xib */; };
 		1B8DBDB8155DE3D900042D26 /* EBPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8DBDB7155DE3D900042D26 /* EBPurchase.m */; };
+		74C826891861310100132A50 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74C826881861310100132A50 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		1B8DBDAE155DE31200042D26 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		1B8DBDB6155DE3D900042D26 /* EBPurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBPurchase.h; sourceTree = "<group>"; };
 		1B8DBDB7155DE3D900042D26 /* EBPurchase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBPurchase.m; sourceTree = "<group>"; };
+		74C826881861310100132A50 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		1B8DBD86155DE31100042D26 = {
 			isa = PBXGroup;
 			children = (
+				74C826881861310100132A50 /* Default-568h@2x.png */,
 				1B8DBDB5155DE3D900042D26 /* EBPurchase */,
 				1B8DBD9B155DE31100042D26 /* EBPurchase-Demo */,
 				1B8DBD94155DE31100042D26 /* Frameworks */,
@@ -121,9 +124,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1B8DBD90155DE31100042D26 /* EBPurchase-Demo */ = {
+		1B8DBD90155DE31100042D26 /* Sample-InAppPurchase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1B8DBDB2155DE31200042D26 /* Build configuration list for PBXNativeTarget "EBPurchase-Demo" */;
+			buildConfigurationList = 1B8DBDB2155DE31200042D26 /* Build configuration list for PBXNativeTarget "Sample-InAppPurchase" */;
 			buildPhases = (
 				1B8DBD8D155DE31100042D26 /* Sources */,
 				1B8DBD8E155DE31100042D26 /* Frameworks */,
@@ -133,7 +136,7 @@
 			);
 			dependencies = (
 			);
-			name = "EBPurchase-Demo";
+			name = "Sample-InAppPurchase";
 			productName = "EBPurchase-Demo";
 			productReference = 1B8DBD91155DE31100042D26 /* EBPurchase-Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -158,7 +161,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1B8DBD90155DE31100042D26 /* EBPurchase-Demo */,
+				1B8DBD90155DE31100042D26 /* Sample-InAppPurchase */,
 			);
 		};
 /* End PBXProject section */
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B8DBDA0155DE31100042D26 /* InfoPlist.strings in Resources */,
+				74C826891861310100132A50 /* Default-568h@2x.png in Resources */,
 				1B8DBDAC155DE31200042D26 /* ViewController_iPhone.xib in Resources */,
 				1B8DBDAF155DE31200042D26 /* ViewController_iPad.xib in Resources */,
 			);
@@ -297,7 +301,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1B8DBDB2155DE31200042D26 /* Build configuration list for PBXNativeTarget "EBPurchase-Demo" */ = {
+		1B8DBDB2155DE31200042D26 /* Build configuration list for PBXNativeTarget "Sample-InAppPurchase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1B8DBDB3155DE31200042D26 /* Debug */,

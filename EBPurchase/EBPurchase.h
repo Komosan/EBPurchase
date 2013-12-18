@@ -56,10 +56,16 @@
 
 -(void) successfulPurchase:(EBPurchase*)ebp restored:(bool)isRestore identifier:(NSString*)productId receipt:(NSData*)transactionReceipt;
 
+/** アプリ内課金がキャンセルされたとき */
+-(void) cancelPurchase:(EBPurchase*)ebp error:(NSInteger)errorCode message:(NSString*)errorMessage;
+
 -(void) failedPurchase:(EBPurchase*)ebp error:(NSInteger)errorCode message:(NSString*)errorMessage;
 
 -(void) incompleteRestore:(EBPurchase*)ebp;
 
 -(void) failedRestore:(EBPurchase*)ebp error:(NSInteger)errorCode message:(NSString*)errorMessage;
+
+/** トランザクションが終了したとき */
+-(void) ebPurchaseFinishedTransaction;
 
 @end
