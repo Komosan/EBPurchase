@@ -180,6 +180,10 @@
     [restoreAlert release];
 }
 
+-(void) canceledRestore:(EBPurchase*)ebp error:(NSInteger)errorCode message:(NSString*)errorMessage{
+    NSLog(@"リストアがキャンセルされました");
+}
+
 -(void) failedRestore:(EBPurchase*)ebp error:(NSInteger)errorCode message:(NSString*)errorMessage 
 {
     NSLog(@"ViewController failedRestore");

@@ -39,7 +39,7 @@
 		1B8DBDAE155DE31200042D26 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		1B8DBDB6155DE3D900042D26 /* EBPurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBPurchase.h; sourceTree = "<group>"; };
 		1B8DBDB7155DE3D900042D26 /* EBPurchase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBPurchase.m; sourceTree = "<group>"; };
-		74C826881861310100132A50 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		74C826881861310100132A50 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,6 @@
 		1B8DBD86155DE31100042D26 = {
 			isa = PBXGroup;
 			children = (
-				74C826881861310100132A50 /* Default-568h@2x.png */,
 				1B8DBDB5155DE3D900042D26 /* EBPurchase */,
 				1B8DBD9B155DE31100042D26 /* EBPurchase-Demo */,
 				1B8DBD94155DE31100042D26 /* Frameworks */,
@@ -104,6 +103,7 @@
 		1B8DBD9C155DE31100042D26 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				74C826881861310100132A50 /* Default-568h@2x.png */,
 				1B8DBD9D155DE31100042D26 /* EBPurchase-Demo-Info.plist */,
 				1B8DBD9E155DE31100042D26 /* InfoPlist.strings */,
 				1B8DBDA1155DE31200042D26 /* main.m */,

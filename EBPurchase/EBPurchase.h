@@ -54,6 +54,7 @@
 
 -(void) requestedProduct:(EBPurchase*)ebp identifier:(NSString*)productId name:(NSString*)productName price:(NSString*)productPrice description:(NSString*)productDescription;
 
+/** アプリ内課金/リストアが成功したとき */
 -(void) successfulPurchase:(EBPurchase*)ebp restored:(bool)isRestore identifier:(NSString*)productId receipt:(NSData*)transactionReceipt;
 
 /** アプリ内課金がキャンセルされたとき */
@@ -62,6 +63,9 @@
 -(void) failedPurchase:(EBPurchase*)ebp error:(NSInteger)errorCode message:(NSString*)errorMessage;
 
 -(void) incompleteRestore:(EBPurchase*)ebp;
+
+/** リストアがキャンセルされたとき */
+-(void) canceledRestore:(EBPurchase*)ebp error:(NSInteger)errorCode message:(NSString*)errorMessage;
 
 -(void) failedRestore:(EBPurchase*)ebp error:(NSInteger)errorCode message:(NSString*)errorMessage;
 

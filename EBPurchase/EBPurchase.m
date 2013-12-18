@@ -228,7 +228,7 @@
     // Release the transaction observer since transaction is finished/removed.
     [[SKPaymentQueue defaultQueue] removeTransactionObserver:self];
     
-    //暫定
+    //トランザクションの終了を通知する
     if ([delegate respondsToSelector:@selector(ebPurchaseFinishedTransaction)]) {
         [delegate ebPurchaseFinishedTransaction];
     }
@@ -274,9 +274,18 @@
     // Restore was cancelled or an error occurred, so notify user.
 
     NSLog(@"EBPurchase restoreCompletedTransactionsFailedWithError");
-
-    if ([delegate respondsToSelector:@selector(failedRestore:error:message:)])
-        [delegate failedRestore:self error:error.code message:error.localizedDescription];
+    
+    //エラーコードで通知内容を変える
+    if (error.code != SKErrorPaymentCancelled) { //キャンセル以外のとき
+        if ([delegate respondsToSelector:@selector(failedRestore:error:message:)])
+            [delegate failedRestore:self error:error.code message:error.localizedDescription];
+    }
+    else{
+        // キャンセル時にはデリゲートで通知します
+        if ([delegate respondsToSelector:@selector(canceledRestore:error:message:)])
+            [delegate canceledRestore:self error:error.code message:error.localizedDescription];
+    }
+    
 }
 
 
